@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</title>
+    <link rel="stylesheet" href="style_upload.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+
+    <header>
+        <div class="header-top">
+            <h6>¡Bienvenidos/as a Guifos.com! —————— Donde los gifs están.////// Número de visitas: 12.765.803</h1>  
+        </div>
+        
+    </header>   
+    <!-- nav-bar -->
+
+    <div class="nav-bar">
+
+
+        <div class="logo" id="logo">
+            <img src="/assets/arrow.svg" alt="flecha" id="arrow">
+    
+            <img  src="/assets/gifOF_logo.png" alt="gifOF_logo">
+        </div>
+    
+
+
+        <div class="menu">
+
+            <button class="btn-crear" id="crearGif"><a>Crear Gifos</a></button>
+
+            <div class="mostrarMenu">
+                <button onclick="desplegarMenu()" class="btn-tema" id="botonDesplegable" ><a>Elegir tema</a> </button>
+                <div id="menuDesplegable" class="menuDesplegable-contenido">
+                    <button onclick="cambiarTema('Sailor-Day')" class="Sailor-Day"><a> Sailor-Day</a></button>
+                    <button onclick="cambiarTema('Sailor-night')" class="Sailor-Night"><a> Sailor-Night</a></button>
+                </div>
+            </div>
+            <button onclick="desplegarMenu()" id="botonDesplegable" class="btn-temaDrop"><img src="../../assets/dropdown.svg" alt=""></button>
+            <button class="mis" id="misGif"><a>Mis Gifos</a> </button>
+            
+            
+        </div>
+
+    </div>
+
+
+    <div class="sugerimos"> 
+    </div>
+    
+
+    
+    <!--------------- INICIO  Cuadro Crear Giffos ----------------------------------------->
+
+    <div class="cartel" id="cartel">
+        <div class="cartel-header">
+            <p>Crear Guifos</p>
+        </div>
+        <div class="cartel-titulo">
+            <img src="/assets/window img.png" alt="">
+            <h5>Aquí podrás crear tus propios guifos</h5>
+        </div>
+        <div class="text-cuerpo">
+            <h3>Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</h3>
+            <ul>
+                <li>
+                    <h3><span>1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</h3>
+                </li>
+                <li>
+                    <h3><span>2)</span> Capturar tu momento guifo</h3>
+                </li>
+                <li>
+                    <h3><span>3)</span> Revisar el momento</h3>
+                </li>
+                <li>
+                    <h3><span>4)</span> Listo para subir y compartir!</h3>
+                </li>
+                <li>
+                    <h3>¿Quieres comenzar a crear tu <span>guifo</span> ahora?</h3>
+                </li>
+            </ul>
+
+            <div class="borones-cartel">
+                <button class="btn-secondary" onclick='location.assign("/index.html")'>Cancelar</button>
+                <button class="btn" id="comenzar" onclick="vistaPreviaVideo()">Comenzar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ************************************************cuadro de vista previa y  catura de video**************************************************** -->
+    <!-- este cuado no me muestra desde el principio , solo cuando es necesario -->
+
+    <div class="cartel dinamico" id="cartel-video">
+        <div class="cartel-header">
+            <p id="titulo-1" class="dinamico">Un Chequeo Antes de Empezar</p>
+            <p id="titulo-2" class="dinamico">Capturando Tu Guifo</p>
+            <p id="titulo-3" class="dinamico">Vista Previa</p>
+            <img id="cancelar" src="/assets/buttonclose.svg" alt="">
+        </div>
+        <div class="marcoCamara">
+            <video id="video" class="video" autoplay></video>
+            <img src="/assets/loanding.gif" id="videoGuardado" class="video dinamico" alt="">
+
+        </div>
+
+        <!-- foter con el boton que cominza la grabacion -->
+
+        <div id="foot-comenzar">
+            <div class="btns-video">
+                <div class="btngrupo">
+                    <button class="btn camara-btn"><img src="/assets/camera.svg" alt=""></button>
+                    <button class="btn" id="btnStart">Capturar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- foter con el boton para terminar la grabacion -->
+
+        <div id="foot-parar" class="dinamico">
+            <div class="btns-video">
+
+                <div class="temporizador">
+                    <h2 class="tiempo" id="temporizadortag"> 00:00</h2>
+                </div>
+
+                <div class="btngrupo">
+                    <button class="btn-warm camara-btn "><img src="/assets/recording.svg " alt=" "></button>
+                    <button class="btn-warm " id="btnStop">Listo</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- foter con el boton para retomar o subir la grabacion -->
+        <div id="foot-subir" class="dinamico">
+            <!-- <div id="foot-subir"> -->
+            <div class="btns-video">
+                <div class="temporizador">
+                    <h2 class="tiempo"> 00:00</h2>
+                </div>
+                <div class="conteprogresbar" id="conteprogresbar">
+                    <div class="pasonegativo">
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                        <div class="paso"></div>
+                    </div>
+                </div>
+                <div class="btngrupo">
+                    <button class="btn-secondary margin-izq-btn " onclick="recapturar()">Repetir Captura</button>
+                    <button class="btn" onclick="subirGif()">Subir Guifo</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ************************************************cuadro de subida de video **************************************************** -->
+
+    <div class="cartel dinamico" id="cartel-subida">
+        <!-- cabezera -->
+        <div class="cartel-header">
+            <p>Subiendo Guifo</p>
+            <img onclick="cancelarSubida()" src="/assets/buttonclose.svg" alt="">
+        </div>
+
+        <!-- ventana principal -->
+        <div class="marcoCamara cartelUpload">
+            <img src="/assets/globe_img.png" alt="">
+
+            <span>Estamos subiendo tu guifo…</span>
+
+            <div class="conteprogresbar-subir" id="conteprogresbar-subir">
+                <div class="pasonegativo">
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                    <div class="paso"></div>
+                </div>
+            </div>
+
+            <p>Tiempo restante: 38 años algunos minutos</p>
+
+        </div>
+        <!-- botones de accion -->
+        <div class="btns-video">
+            <div class="btngrupo">
+                <button class="btn" onclick="cancelarSubida()">Cancelar</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- ************************************************pantalla de muestra y descarga**************************************************** -->
+
+
+    <div class="cartel dinamico" id="cartel-muestr-desc">
+        <!-- cabezera -->
+        <div class="cartel-header">
+            <p>Guifo Subido Con Éxito</p>
+            <img onclick="location.reload()" src="../../assets/buttonclose.svg" alt="">
+        </div>
+        <div class="img-cart-final">
+            <!-- ventana principal -->
+            <div class="marcoCamara gif-fin">
+                <img src="../../assets/loanding.gif" alt="" id="muestra-gif">
+            </div>
+
+            <div class="btns-extra">
+                <h2>Guifo creado con éxito</h2>
+                <button class="btn-secondary" id="btn-copiEnla">Copiar Enlace Guifo</button>
+                <button class="btn-secondary" onclick="descargarGif()">Descargar Guifo</button>
+            </div>
+
+        </div>
+
+        <!-- botones de accion -->
+        <div class="btns-video btn-final-foot">
+            <div class="btngrupo">
+                <button class="btn" onclick="terminadoElGif()">Listo</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ************************************************mis-gif**************************************************** -->
+    <div class="barrratitulo" id="barrratitulo">
+        <p> Mis guifos</p>
+    </div>
+
+    <!-- galeria  de mis gif -->
+    <div class="galeriaGif" id="misGif">
+    </div>
+
+<!----------------------------------------------INICIO JAVASCRIPT -->
+<script type="text/javascript" src="funciones.js"></script>
+
+<script src="https://kit.fontawesome.com/19a68e93f4.js" crossorigin="anonymous"></script>
+
+<!----------------------------------------------TERMINO JAVASCRIPT -->
+
+
+</body>
+</html>

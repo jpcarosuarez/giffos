@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  background: #F7C9F3;
+}
+
+/* ---------------------------------------------- COMIENZO --FUENTES ---------------------------------------------- */
+h2{
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Chakra Petch', sans-serif;
+  margin-left: 5px;
+}
+
+h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: justify;
+  margin: 6px;
+  font-weight: normal;
+}
+
+h6{
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+/* ---------------------------------------------- INICIO fuente titulo resultados ---------------------------------------------- */
+
+p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-top: 3px;
+  margin: 0;
+  
+}
+/* ---------------------------------------------- TERMINO fuente titulo resultados ---------------------------------------------- */
+
+/* ----------------------------------------------TERMINO --FUENTES ---------------------------------------------- */
+
+
+
+/* ----------------------------------------------INICIO HEADER ---------------------------------------------- */
+
+header {
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  width: 100%;
+  position: initial;
+
+}
+.header-top{
+  top: 0;
+  height: 23px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-bottom: solid black 1px;
+}
+/* ----------------------------------------------Termino HEADER ---------------------------------------------- */
+
+/*-- -----------------------------------------INICIO----- LOGO ---------------------------------------------- */
+
+.logo{
+  display: flex;
+  align-items: flex-start ;
+  cursor: pointer;
+}
+/*-- ------------------------------------------TERMINO---- LOGO ---------------------------------------------- */
+
+
+
+/*-- ------------------------------------------INICIO---- Barra Navegacion ---------------------------------------------- */
+
+.nav-bar{
+  width: 1200px;
+  display: flex;
+  position: relative;
+  margin: 40px 91px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.nav-bar .menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.btn-crear {
+  width: 144px;
+  height: 36px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; 
+  margin-right: 10px;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.btn-tema {
+  width: 131px;
+  height: 36px;
+  display: flex;
+  align-content: flex-end;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; 
+  font-family: 'Chakra Petch', sans-serif;
+  cursor: pointer;
+  background: #F7C9F3;
+  justify-content: center;
+
+}
+.mostrarMenu {
+  position: relative;
+  display: inline-block;
+
+}
+
+.nav-bar .elegirTemaMenu{
+  position: absolute;
+  top: 94px;
+  display: flex;
+  visibility: hidden;
+  z-index: 15;
+  flex-direction: column;
+}
+
+.menuDesplegable-contenido {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  padding: 10px 10px 0px 10px;
+  background: #E6E6E6;
+  width: 147px;
+  transition: all 0.2s ease-in-out 0s;
+
+}
+.menuDesplegable-contenido a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  justify-content: flex-start;
+
+}
+.show {
+  display:block;
+}
+
+.nav-bar .btn-temaDrop {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; 
+  background: #F7C9F3;
+  cursor: pointer;
+
+}
+
+.menuDesplegable-contenido button {
+  margin-bottom: 10px;
+  display: flex;
+  width: 150px;
+  height: 36px;
+
+}
+
+.nav-bar .mis {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-items: flex-end;
+}
+
+.mis:first-letter{
+  text-decoration: underline;
+
+}
+.Sailor-Day :first-letter{
+  text-decoration: underline;
+
+}
+
+/*--Termino ---------------------------------------------- Barra Navegacion ---------------------------------------------- */
+
+
+/*--INICIO ---------------------------------------------- Barra Busqueda ---------------------------------------------- */
+
+.busqueda {
+  margin: 38px 91px;
+  width: 1200px;
+  background: #E6E6E6;
+  height: 100px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+#bus-top{
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  text-align: flex-start ;
+
+}
+.esconder {
+  visibility: hidden;
+}
+
+.sugeridos {
+  position: absolute;
+  width: 1200px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 5;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-top: -2px;
+}
+
+.btn-sug {
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #808080;
+  margin:11px 10px 2px;
+  text-align: left;
+  font-family: 'Chakra Petch', sans-serif;
+  width: 1057px;
+  height: 36px;
+}
+
+.bus-top {
+  display: flex;
+  width: 100%;
+  height: 24px;
+  align-items: center;
+
+}
+
+
+.input{
+  margin: 12px 15px;
+  height: 48px;
+  width: 1057px;
+  background: #FFFFFF;
+  border: 2px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.cont-btn-bsc {
+  position: absolute;
+  margin: 18px 0px 18px;
+  width: 102px;
+  height: 36px;
+  font-size: 16px;
+  color: #B4B4B4;
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  cursor: pointer;
+
+}
+
+/*--Termino  ----------------------------------------------Barra Busqueda----------------------------------------------*/
+
+/*--INICIO  ----------------------------------------------Barra TITULO separacion----------------------------------------------*/
+
+.cuadroTitulo {
+  margin-left: 91px;
+  width: 1200px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  cursor: pointer;
+}
+
+/*--TERMINO  ----------------------------------------------Barra TITULO separacion ---------------------------------------------- */
+
+/*--INICIO  --------------FALTAAAAAA:!!!!!!!!!--------------------RESULTADOS ---------------------------------------------- */
+
+.grillaTendencias {
+  margin-left: 91px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-items: space-around;
+  padding: 2px;
+  position: absolute;
+}
+
+#sug {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 10fr));
+  gap: 16px ;
+}
+
+/*--TERMINO  ----------------------FALTAAAAAA:!!!!!!!!!------------------------RESULTADOS---------------------------------------------- */
+
+/*--INICIO  --------------------------------------- Hoy te sugerimos  ---------------------------------------------- */
+
+.gridSugerencia {
+  display: flexbox;
+  position: relative;
+  justify-content: space-between;
+  margin: 38px 91px;
+}
+.tituloGiff{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 1200px;
+  height: 303px;
+}
+
+.cuadroGiff{
+  display: grid;
+  position: relative;
+  height: 313px;
+  width: 288px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.btn_close {
+  position: relative;
+  margin-left: 260px;
+  top: -16px;
+}
+.giff {
+  height: 280px;
+  width: 280px;
+  padding: 29px 4px 4px ;
+}
+.galSuge {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+
+.titGiff {
+  justify-content: center;
+  height: 24px;
+  width: 280px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  margin: 3px 4px 2px 4px;
+  position: absolute;
+
+}
+
+.btn-verMas {
+  display: flex;
+  position: absolute;
+  color: #FFFFFF;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  height: 34px;
+  width: 81px;
+  margin: 266px 185px 9px 14px;
+
+}
+
+/*--TERMINO  --------------------------------------- Hoy te sugerimos  ---------------------------------------------- */
+/*-----------------INICIO  ------------TENDENCIAS / TRENDINGS---------------------------------------------------- */
+
+/* ------------------------INICIO Elementos en HTML */
+.resTendencias{
+  display: flex;
+  position: relative;
+  margin: 20px 91px;
+  width: 1200px;
+}
+
+.resultadoTrending {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ------------------------TERMINO ---------Elementos en HTML */
+
+/* INICIO ----------Objeto JavaScript Giff - GALERIA TRENDING */
+/*IMAGEN */
+img {
+  max-width: 480px;
+
+}
+
+.giffTrend {
+  display: flex;
+  position: relative;
+}
+
+.trendgiff {
+  
+  padding: 4px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.trendImg{
+  display: flex;
+  position: relative;
+}
+/* Elemento Titulo Giff*/
+
+.trending {
+  position: relative;
+  display: flex;
+  height: 280px;
+  max-width: fit-content;
+  padding: 4px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+/* Elemento Titulo Giff Hover */
+
+.hoverGiff {
+  /* display: none; */
+  top: 250px;
+  height: 34px;
+  width: 100%; 
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  position: absolute;
+}
+
+/*--TERMINO  --------------------------------------- Hoy te sugerimos  ---------------------------------------------- */
+
+/* -------------------------------------INICIO---- Menu Sugeridos Index  ---------------------------------------------- */
+
+
+#close {
+  position: absolute;
+  margin: 5px 55px 60px 255px; 
+  cursor: pointer;
+}
+
+/* -------------------------------------Termino---- Menu Sugeridos Index  ---------------------------------------------- */
+
+
+/* -------------------------------------INICIO---- arrow Volver al Index  ---------------------------------------------- */
+#arrow {
+  padding-top: 12px;
+  margin-right: 7px;
+}
+/* -------------------------------------TERMINO---- arrow Volver al Index  ---------------------------------------------- */
+

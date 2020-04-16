@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>¡Bienvenidos/as a Gifos.os! ——————Donde los gifs están.////// Número de visitas: 12.765.803</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!----------------------------------------------INICIO  HEADER -->
+    
+    <header>
+        <div class="header-top">
+            <h6>¡Bienvenidos/as a Gifos.os! —————— Donde los gifs están.////// Número de visitas: 12.765.803</h1>  
+        </div>
+        
+    </header>
+    <!----------------------------------------------TERMINO  HEADER -->
+
+    <!----------------------------------------------INICIO  NAV BAR -->
+    <div class="nav-bar">
+
+        <div class="logo" id="logo"><img onclick="location.reload();" src="/assets/gifOF_logo.png" alt="Logo Gifos"></div>
+ 
+        <div class="menu">
+
+            <button class="btn-crear" id="crearGif"><a>Crear Gifos</a></button>
+
+            <div class="mostrarMenu">
+                <button onclick="desplegarMenu()" class="btn-tema" id="botonDesplegable" ><a>Elegir tema</a> </button>
+                <div id="menuDesplegable" class="menuDesplegable-contenido">
+                    <button><a> Sailor-Day</a></button>
+                    <button><a> Sailor-Night</a></button>
+                </div>
+            </div>
+            <button onclick="desplegarMenu()" id="botonDesplegable" class="btn-temaDrop"><img src="/assets/dropdown.svg" alt=""></button>
+            <button class="mis" id="misGif"><a>Mis Gifos</a> </button>
+  
+        </div>
+
+    </div>
+    <!----------------------------------------------TERMINO  NAV BAR -->
+
+    <!----------------------------------------------INICIO  CUADRO BUSQUEDA -->
+    <div class="busqueda">
+
+        <div>
+            <div id="bus-top" class="bus-top">  
+                <h2>Buscar</h2>
+            </div>
+
+        </div>
+
+        <label for="search"></label>
+        <input id="search" type="search" class="input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+        <button type="submit" value="Buscar" id="btn" class="cont-btn-bsc" ><img src="assets/lupa_inactive.svg" alt="lupa"> Buscar</button>
+            
+        <div class="esconder">
+            <div class="sugeridos" >
+                <button class="btn-sug"># busqueda</button>
+                <button class="btn-sug"># busqueda</button>
+                <button class="btn-sug"># busqueda</button>
+            
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------------------------TERMINO  CUADRO BUSQUEDA -->
+    
+    <!---- Utilizar canvas como lienzo de respuestas 
+
+    <canvas id="miCanvas" height="393px" width="1200px"></canvas>
+    
+    -------->
+
+    <!----------------------------------------------INICIO  CUADRO HOY TE SUGERIMOS -->
+
+
+    <div class="cuadroTitulo"> 
+        <h3> Hoy te sugerimos: </h3> 
+    </div>
+ 
+    <div class="gridSugerencia">
+
+        <div class="tituloGiff"></div>
+            
+    </div>
+
+    <!----------------------------------------------TERMINO  CUADRO HOY TE SUGERIMOS -->
+
+    <!----------------------------------------------INICIO  CUADRO TENDENCIAS -->
+    
+    <div class="cuadroTitulo"> 
+        <h3>Tendencias</h3> 
+    </div> 
+    <div class="resTendencias">
+
+        <div class="resultadoTrending"></div>
+
+    </div>
+     
+    <!----------------------------------------------TERMINO  CUADRO TENDENCIAS -->
+
+    <!----------------------------------------------INICIO  CUADRO BUSQUEDAS -->
+    <div class="cuadroTitulo"> 
+        <h3>#BUSQUEDA</h3> 
+
+    </div>    
+    <div class="grillaTendencias">
+
+        <div id="sug" class="resultadoBusqueda"  ></div>
+
+    </div>
+
+    <!----------------------------------------------TERMINO CUADRO BUSQUEDAS -->
+          
+    <!----------------------------------------------INICIO JAVASCRIPT -->
+<script type="text/javascript" src="funciones.js"></script>
+<script src="https://kit.fontawesome.com/19a68e93f4.js" crossorigin="anonymous"></script>
+
+<!----------------------------------------------TERMINO JAVASCRIPT -->
+
+</body>
+
+
+</html>
